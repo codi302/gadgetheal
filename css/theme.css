@@ -142,7 +142,7 @@ a,button,.btn, .transition{-webkit-transition: all 0.3s ease-in-out 0s;-moz-tran
 .header-login a:hover{color: #f14f2a;}
 .header-login a img{margin-left: 5px;}
 
-.banner{background: url('../img/banner-bg.png') no-repeat center;background-size: cover;min-height: 640px;position: relative;margin-top: 65px;}
+.banner{background: url('https://raw.githubusercontent.com/codi302/gadgetheal/master/img/banner-bg.png') no-repeat center;background-size: cover;min-height: 640px;position: relative;margin-top: 65px;}
 .banner_content{padding-top: 160px;}
 .banner_content h2{font-size: 42px;font-family: 'Orkney';font-weight: bold;color: #fff;letter-spacing: 1px;}
 .banner_content h2 span{color: #f14f2a;}
