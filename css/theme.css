@@ -1,0 +1,347 @@
+/*Theme Fonts Orkney*/
+@font-face {
+  font-family: 'Orkney';
+  src: url('../fonts/Orkney-Bold.woff2') format('woff2'),
+      url('../fonts/Orkney-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Orkney';
+  src: url('../fonts/Orkney-Regular.woff2') format('woff2'),
+      url('../fonts/Orkney-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Orkney';
+  src: url('../fonts/Orkney-Light.woff2') format('woff2'),
+      url('../fonts/Orkney-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Orkney';
+  src: url('../fonts/Orkney-Medium.woff2') format('woff2'),
+      url('../fonts/Orkney-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+/*Theme Fonts Orkney*/
+
+@font-face {
+  font-family: 'Axiforma';
+  src: url('../fonts/Axiforma-Book.woff2') format('woff2'),
+      url('../fonts/Axiforma-Book.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Axiforma';
+  src: url('../fonts/Axiforma-Black.woff2') format('woff2'),
+      url('../fonts/Axiforma-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Axiforma';
+  src: url('../fonts/Axiforma-Medium.woff2') format('woff2'),
+      url('../fonts/Axiforma-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Axiforma';
+  src: url('../fonts/Axiforma-Light.woff2') format('woff2'),
+      url('../fonts/Axiforma-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Axiforma';
+  src: url('../fonts/Axiforma-Regular.woff2') format('woff2'),
+      url('../fonts/Axiforma-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Axiforma';
+  src: url('../fonts/Axiforma-Bold.woff2') format('woff2'),
+      url('../fonts/Axiforma-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Axiforma';
+  src: url('../fonts/Axiforma-ExtraBold.woff2') format('woff2'),
+      url('../fonts/Axiforma-ExtraBold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Axiforma';
+  src: url('../fonts/Axiforma-SemiBold.woff2') format('woff2'),
+      url('../fonts/Axiforma-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Axiforma';
+  src: url('../fonts/Axiforma-Thin.woff2') format('woff2'),
+      url('../fonts/Axiforma-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+}
+
+/*Generic Styles*/
+body{font-family: 'Axiforma';font-size: 14px; color: #000; overflow-x:hidden;}
+
+a{outline: none; text-decoration: none !important;}
+a:hover, a:focus{color: #eb0303;}/**transitions for all hover elements**/
+a,button,.btn, .transition{-webkit-transition: all 0.3s ease-in-out 0s;-moz-transition: all 0.3s ease-in-out 0s;-o-transition: all 0.3s ease-in-out 0s;transition: all 0.3s ease-in-out 0s;cursor: pointer;}
+
+#nav_icon {width: 35px;height: 25px;position: relative;cursor: pointer;transition: all 0.5s;margin: auto;}
+#nav_icon span {display: block;width: 35px;height: 4px;border-radius: 8px;background: #f14f2a;position: absolute;transition: 0.25s ease-in-out;opacity: 1;transform: rotate(0deg);left: 0;}
+#nav_icon span:nth-child(1) {top: 0;transform: rotate(0deg);}
+#nav_icon span:nth-child(2) {top: 10px;transform: rotate(0deg);}
+#nav_icon span:nth-child(3) {top: 20px;transform: rotate(0deg);}
+#nav_icon.open span:nth-child(1) {top: 12px;transform: rotate(135deg);}
+#nav_icon.open span:nth-child(2) {left: -60px;opacity: 0;}
+#nav_icon.open span:nth-child(3) {top: 12px;transform: rotate(-135deg);}
+
+
+/*Main Navigation Style*/
+.site-nav {background-color: #fff;}
+.site-nav.navbar-light .navbar-nav .nav-link {color: #302e2e;padding: 22px 20px 22px 20px;font-size: 14px;font-weight: 500;}
+.site-nav.navbar-light .navbar-nav .nav-item.active .nav-link, 
+.site-nav.navbar-light .navbar-nav .nav-link:hover, 
+.site-nav.navbar-light .navbar-nav .nav-link:focus {color: #f14f2a;}
+.site-nav.fixed {width: 100%;z-index: 1050; position: fixed; top: 0; -webkit-transition: all 0.3s ease-in-out 0s;-o-transition: all 0.3s ease-in-out 0s;transition: all 0.3s ease-in-out 0s;border-bottom: 1px solid #d8d8d8;}
+.site-nav.fixed.fixed-nav {background-color: #0f022a;}
+.navbar-light .navbar-brand .logo-item {max-width: 170px;display: block;}
+.site-nav.navbar-light .navbar-nav .nav-btn:hover, 
+.site-nav.navbar-light .navbar-nav .btn-secondary:focus, 
+.site-nav.navbar-light .navbar-nav .btn-secondary:active:focus, 
+.site-nav.navbar-light .navbar-nav .btn-secondary:not(:disabled):not(.disabled).active, 
+.site-nav.navbar-light .navbar-nav .btn-secondary:not(:disabled):not(.disabled):active {background-color: #fff;color: #f14f2a;border-color: #fff; box-shadow:none;}
+
+.header-login{padding: 22px 0 22px 20px;}
+.header-login a{color: #302e2e;}
+.header-login a:hover{color: #f14f2a;}
+.header-login a img{margin-left: 5px;}
+
+.banner{background: url('../img/banner-bg.png') no-repeat center;background-size: cover;min-height: 640px;position: relative;margin-top: 65px;}
+.banner_content{padding-top: 160px;}
+.banner_content h2{font-size: 42px;font-family: 'Orkney';font-weight: bold;color: #fff;letter-spacing: 1px;}
+.banner_content h2 span{color: #f14f2a;}
+.banner_content p{font-size: 20px;color: #fff;font-family: 'Orkney';margin-bottom: 20px;}
+.banner_content form{max-width: 400px;}
+.banner_content .input-group input{height: 64px;padding-left: 20px;color: #302e2e;font-size: 16px;border: none;}
+.banner_content .input-group ::-webkit-input-placeholder {color: #302e2e;}
+.banner_content .input-group :-moz-placeholder {color: #302e2e;}
+.banner_content .input-group ::-moz-placeholder {color: #302e2e;}
+.banner_content .input-group :-ms-input-placeholder {color: #302e2e;}
+.banner_content .input-group ::-ms-input-placeholder {color: #302e2e;}
+.banner_content .input-group .form-control::placeholder {color: #302e2e;}
+.banner_content .input-group .input-group-text{padding: 0;border: none;}
+.banner_content .input-group .input-group-text button{height: 100%;width: 94px;display: flex;align-items: center;justify-content: center;background: #f14f2a;border:none;color: #fff;border-radius: 0 .25rem .25rem 0;outline: none;transition: all 0.3s;}
+.banner_content .input-group .input-group-text button:hover{background: #f28972;}
+.banner_content .input-group .input-group-text button .flaticon-right-arrow:before{font-size: 30px;}
+.banner-image{position: absolute;right: 20px;top: 30px;}
+
+.like-to-do{padding-top: 85px;}
+.like-to-do .head_area{text-align: center;}
+.feature_box_wrapper{padding-top: 50px;}
+.site-title{font-family: 'Orkney';font-weight: bold;font-size: 42px;color: #302e2e;}
+.feature_box_wrapper [class*="col-"]{padding-left: 10px;padding-right: 10px;}
+.like-to-do .feature_box{display:block;border-radius: 30px;box-shadow: 0 0 10px rgba(9, 39, 78, 20%);padding: 35px 0;text-align: center;min-height: 190px;margin-bottom: 30px;transition: all 0.3s;border: 1px solid transparent;}
+.like-to-do .feature_box:hover{animation: pulse-effect 0.6s linear;background: #def1fe;border: 1px solid #122d6f;}
+.like-to-do .feature_box .img_wrap{min-height: 95px;display: flex;align-items: center;justify-content: center;}
+.like-to-do .feature_box span{font-size: 15px;color: #302e2e;}
+
+.about-gadgetheal{position: relative;padding-top: 115px;border-bottom: 1px solid #d8d8d8;min-height: 698px;}
+.about-gadgetheal .img_wrap{position: absolute;right: 0;top: 115px;}
+.about-gadgetheal-content{padding-top: 115px;}
+.about-gadgetheal-content h2{color: #302e2e;font-size: 48px;font-weight: bold;margin-bottom: 40px;}
+.about-gadgetheal-content p{color: #707070;font-size: 18px;line-height: 30px;}
+
+.services-sec{padding-top: 90px;padding-bottom: 85px;}
+.service_bx .img_wrap{min-height: 250px;display: flex;align-items: center;}
+.schedule-pickup .img_wrap{padding-left: 60px;}
+.service_bx h3{font-family: 'Orkney';}
+.service_bx .number{color: #f14f2a;font-size: 48px;font-weight: 400;margin-right: 20px;}
+.service_bx .title{font-size: 26px;font-weight: bold;}
+.service_bx p{font-size: 16px;color: #302e2e;max-width: 300px;margin-bottom: 0;}
+
+
+.whyUs_sec{background: #def1fe;padding: 85px 0 110px 0;}
+.whyUs-stepBox{display: flex;align-items: baseline;}
+.whyUs-stepBox .description{margin-left: 20px;padding-top: 15px;}
+.whyUs-stepBox .description h3{color: #302e2e;font-size: 26px;font-family: 'Orkney';font-weight: 400;}
+.whyUs-stepBox .description p{color: #707070;font-size: 16px;margin-bottom: 25px;}
+
+.tracking-your-track{padding-top: 55px;display: flex;justify-content: space-between;}
+.tracking-your-track .img_wrap{display: flex;align-items: flex-end;}
+.tracking_content{max-width: 560px;flex: 0 0 560px;padding-right: 190px;padding-left:30px;box-sizing: content-box;padding-top: 170px;}
+.tracking_content h2{color: #302e2e;font-size: 48px;font-weight: bold;margin-bottom: 40px;}
+.tracking_content p{color: #707070;font-size: 18px;line-height: 30px;}
+
+.trustpilot-sec{background: #def1fe;padding: 85px 0;}
+.trustpilot_content{text-align: center;}
+.trustpilot_content h3{color: #302e2e;font-size: 42px;font-family: 'Orkney';font-weight: bold;margin-bottom: 45px;}
+.theme_blue_btn{border: 2px solid #122e6f;background: #122e6f;color: #fff;font-size: 18px;font-family: 'Orkney';height: 45px;width: 265px;border-radius: 7px;transition: all 0.3s;}
+.theme_blue_btn:hover{background: none;color: #122e6f;}
+
+.theme_orange_btn{border: 2px solid #f14f2a;background: #f14f2a;color: #fff;font-size: 18px;font-family: 'Orkney';height: 45px;width: 265px;border-radius: 7px;transition: all 0.3s;}
+.theme_orange_btn:hover{background: none;color: #f14f2a;}
+.trustpilot_content .theme_blue_btn{display: flex;align-items: center;justify-content: center;margin: 60px auto 0 auto;}
+.trustpilot_content .theme_blue_btn i{margin-left: 14px;}
+
+.repaired_brands{padding: 100px 0;}
+.repaired_brands .title{color: #302e2e;font-size: 42px;font-family: 'Orkney';font-weight: bold;text-align: center;margin-bottom: 50px;}
+.repaired_brands_box{display: block;border-radius: 15px;box-shadow: 0 0 8px rgba(9, 39, 78, 10%);padding: 20px 0;text-align: center;min-height: 130px;margin-bottom: 30px;    display: flex;align-items: center;justify-content: center;}
+.view_more .theme_blue_btn{width: 145px;margin: 20px auto 0 auto;display: flex;align-items: center;justify-content: center;}
+.view_more .theme_blue_btn i{margin-left: 5px;}
+
+.repairAt_doorstep{background: url(../img/banner-bg.png) no-repeat center;background-size: cover;padding: 20px 0;}
+.repairAt_doorstep .content{padding-top: 100px;}
+.repairAt_doorstep .content h2{font-size: 42px;color: #fff;font-weight: bold;}
+.repairAt_doorstep .content p{font-size: 18px;color: #fff;font-weight: 300;}
+
+footer{padding-top: 95px;}
+footer .title{color:#122d6f;font-size: 18px;font-weight: bold;margin-bottom: 20px;}
+.footer_links ul{list-style: none;margin: 0;padding: 0;}
+.footer_links ul li{margin-bottom: 10px;}
+.footer_links ul li a{color: #302e2e;font-size: 17px;transition: all 0.3s;}
+.footer_links ul li a:hover{color: #f14f2a;}
+.links_wrapper{display: flex;justify-content: space-between;padding-right: 30px}
+.social_links{list-style: none;margin: 0;padding: 0;display: flex;align-items: center;margin-bottom: 15px;}
+.social_links a{color: #f14f2a;margin-right: 15px;}
+.social_links a:hover{color:#122d6f}
+.social_links a.facebook{margin-right: 5px;}
+.social_links [class^="flaticon-"]:before{font-size: 30px;}
+.social_links .flaticon-twitter:before {font-size: 33px;}
+.social_links .flaticon-youtube:before {font-size: 35px;}
+.social_links+.theme_blue_btn{width: 145px;}
+.last_column_inner{padding-left: 100px;}
+
+.footer_bottom{border-top: 1px solid #e8e8e8;margin-top: 80px;padding-top: 40px;}
+.footer_bottom_inner{display: flex;}
+.footer-descript h4{color: #122d6f;font-size: 18px;font-weight: bold;margin-bottom: 15px;}
+.footer-descript p{color: #707070;font-size: 18px;}
+.footer-descript{margin-left: 120px;position: relative;}
+.footer-descript:before {content: "";position: absolute;left: -60px;top: -10px;width: 1px;height: 100%;background: #e8e8e8;}
+
+.bottom-bar{border-top: 1px solid #e8e8e8;padding: 13px 0;margin-top: 30px;}
+.bottom-bar p{color: #302e2e;font-size: 16px;font-weight: 400;text-align: center;margin: 0;}
+
+
+@keyframes pulse-effect
+{
+  0% {
+    box-shadow: 0 0 0 0px rgba(221, 221, 221, 0.6);
+  }
+  100% {
+    box-shadow: 0 0 0 20px rgba(221, 221, 221, 0.2);
+  }
+}
+
+/*Media Queires*/
+
+@media(max-width:1366px){
+  .like-to-do .feature_box span {font-size: 14px}
+  .tracking_content {padding-right: 70px;}
+}
+@media(max-width:1199px){
+  .whyUs-stepBox .description h3 {font-size: 22px;}
+  .whyUs-stepBox .description p {font-size: 14px;}
+  .repairAt_doorstep .content {padding-top: 20px;}
+  .repairAt_doorstep .content h2 {font-size: 28px;}
+  .repairAt_doorstep .content p {font-size: 16px;}
+  footer {padding-top: 55px;}
+  footer .title {font-size: 16px;}
+  .footer_links ul li a {font-size: 15px;}
+  .footer-descript p {font-size: 14px;}
+}
+@media(max-width:991px){
+  .navbar-light .navbar-toggler .icon-bar {display: block;width: 20px;height: 2px;background-color: #fff;margin-bottom: 6px;}
+  .site-nav.navbar-light .navbar-nav .nav-link {padding: 15px;}
+  .site-nav.fixed {animation: none;-webkit-animation: none;}
+  .site-nav .navbar-nav {display: block;flex-direction: unset;}
+  .site-nav.navbar-light .navbar-nav .nav-link {font-size: 15px;}
+  .site-nav.navbar-light .navbar-nav .nav-btn {width: 100%;border-radius: 0;}
+  .header-login {position: absolute;right: 0;top: 0;padding: 14px 0 14px 20px;}
+  .site-nav .container{position: relative;}
+  .navbar-toggler{border: none;outline: none !important;margin-right: 85px;padding: 0;}
+  #nav_icon.open{height: 29px;}
+  .banner {min-height: 520px;}
+  .banner_content h2 {font-size: 28px;}
+  .banner_content p {font-size: 17px;}
+  .banner_content .input-group input {height: 50px;}
+  .banner_content .input-group .input-group-text button {width: 64px;}
+  .banner-image {width: 450px;right: 10px;}
+  .banner-image img{max-width: 100%;}
+  .schedule-pickup .img_wrap {padding-left: 20px;}
+  .services-sec {padding-top: 20px;padding-bottom: 45px;}
+  .service_bx .number {font-size: 34px;margin-right: 10px;}
+  .service_bx .title {font-size: 22px;}
+  .service_bx p {font-size: 14px;max-width: 100%;}
+  .whyUs_sec {padding: 45px 0 30px 0;}
+  .site-title {font-size: 34px;margin-bottom: 20px;}
+  .tracking-your-track {padding-top: 35px;flex-direction: column-reverse;}
+  .tracking_content {max-width: 100%;flex: 0 0 100%;padding-right: 15px;padding-left: 15px;padding-top: 0;margin-bottom: 30px;}
+  .tracking_content h2 {font-size: 34px;margin-bottom: 20px;}
+  .tracking_content p {font-size: 16px;line-height: 20px;}
+  .last_column_inner {padding-left: 0;}
+  .footer_logo img{width: 160px;}
+}
+@media(max-width:767px){
+  .banner{padding-bottom: 30px;}
+  .banner_content {padding-top: 30px;}
+  .banner-image{max-width: 540px;width: 100%;position: relative;margin: 0 auto;right: 0;padding: 0 15px;}
+  .site-title {font-size: 32px;}
+  .feature_box_wrapper {padding-top: 20px;}
+  .services-sec {padding-top: 20px;}
+  .whyUs-stepBox .description p{margin-bottom: 15px;}
+  .trustpilot-sec {padding: 40px 0;}
+  .trustpilot_content h3 {font-size: 32px;margin-bottom: 35px;}
+  .trustpilot_content .theme_blue_btn {margin: 30px auto 0 auto;}
+  .repaired_brands {padding: 40px 0;}
+  .repaired_brands .title {font-size: 32px;margin-bottom: 20px;}
+  .repaired_brands_box {min-height: 110px;margin-bottom: 20px;}
+  .repairAt_doorstep .content {margin-bottom: 40px;}
+  .links_wrapper{padding-right: 0;}
+  .footer_links {flex: 0 0 160px;margin-bottom: 25px;}
+  .footer_bottom {margin-top: 40px;}
+  .footer_bottom_inner {flex-direction: column;}
+  .footer-descript {margin-left: 0;margin-top: 20px;padding-top: 20px;}
+  .footer-descript:before {left: 0;top: 0;width: 100%;height: 1px;}
+  .footer-descript h4 {margin-bottom: 10px;}
+  .bottom-bar {margin-top: 10px;}
+}
+@media(max-width:575px){
+  .logo-item img{width: 170px;}
+  .header-login a img {margin-left: 0;}
+  .header-login a img{margin-left: 0;}
+  .banner {margin-top: 57px;}
+  .header-login {padding: 10px 0 10px 15px;}
+  .banner_content h2 {font-size: 26px;}
+  .banner_content p {font-size: 16px;}
+  .like-to-do .feature_box {padding: 10px 0;min-height: 140px;margin-bottom: 20px;}
+  .like-to-do {padding-top: 30px;}
+  .tracking_content h2 {font-size: 24px;margin-bottom: 10px;}
+  .tracking_content p{font-size: 14px;}
+}
+
